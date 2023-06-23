@@ -1,3 +1,19 @@
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  
+  window.addEventListener('scroll', function() {
+    var button = document.querySelector('.scroll-to-top');
+    if (window.scrollY > 300) {
+      button.style.display = 'block';
+    } else {
+      button.style.display = 'none';
+    }
+  });
+
 var modal = document.getElementById("modal");
 var modalButton = document.getElementById("modalButton");
 var closeBtn = document.getElementsByClassName("close")[0];
