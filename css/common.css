@@ -9,17 +9,6 @@ body {
     background-blend-mode: multiply;
 }
 
-.link {
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.link:hover,
-.link:focus {
-    transition: 0.3s;
-    transform: scale(1.1);
-}
-
 h1,
 h2,
 h3 {
@@ -44,6 +33,8 @@ button:hover,
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
+select, option,
 textarea {
     width: 100%;
     padding: 10px;
@@ -53,9 +44,9 @@ textarea {
     font-size: 14px;
 }
 
-main {
+main{
     margin: 0 auto;
-    width: 100%;
+    width: 100vh;
 }
 
 header {
@@ -162,6 +153,7 @@ header {
     background-color: #f9f9f9;
     padding: 50px 0;
     text-align: center;
+    height: 80vh;
 }
 
 .contact-title {
@@ -266,82 +258,103 @@ footer {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    animation-name: modalOpen;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 650px;
-    animation-name: modalContentOpen;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close {
-    animation-name: modalClose;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes modalOpen {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes modalContentOpen {
-    from {
-        transform: scale(0.8);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-@keyframes modalClose {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-.modal-img {
-    width: 600px;
+.about-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0 20px;
+  }
+  
+  .about-content {
+    text-align: center;
+    padding: 30px;
+    margin: 0 20px;
+    padding-bottom: 0px;
+  }
+  
+  .about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .about-icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    background: rgb(244,244,244);
+background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(244,244,244,1) 100%);
+  }
+  
+  .icon {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .icon p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+.light{
+background-color: #f8f8f8;
 }
 
-.modal-h {
-    text-align: center;
+.dark{
+    background-color: #f4f4f4;
 }
+
+.country{
+margin: 0 auto;
+    width: 100%;
+}
+
+.countries-content {
+    text-align: center;
+    padding: 30px 0;
+    padding-bottom: 0px;
+  }
+  
+  .countries-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .countries-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  .country-info{
+    padding: 0 40px;
+  }
+
+  .country-wrapper{
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 50px;
+    height: auto;
+  }
+
+  .country-img{
+    width: 100%;
+    height: auto;
+  }

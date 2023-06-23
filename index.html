@@ -4,29 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./storage/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
+    <title>Турагентство</title>
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo"><img class="logo" src="./storage/logo.png" alt="logo"></a>
+        <a href="./index.html" class="logo"><img class="logo" src="./storage/logo.png" alt="logo"></a>
         <nav class="navbar">
             <ul class="navbar-list">
                 <li class="navbar-item">
-                    <a href="#" class="navbar-link active">Головна</a>
+                    <a href="./index.html" class="navbar-link active">Головна</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#" class="navbar-link">Про нас</a>
+                    <a href="./about.html" class="navbar-link">Про нас</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#" class="navbar-link">Замовити тур</a>
+                    <a href="./order.html" class="navbar-link">Замовити тур</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#" class="navbar-link">Країни</a>
+                    <a href="./countries.html" class="navbar-link">Країни</a>
                 </li>
             </ul>
         </nav>
@@ -35,31 +37,33 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Ласкаво просимо до нашого турагентства!</h1>
-                <p class="hero-description">Подорожуйте з комфортом та відкривайте нові місця з нами.</p>
-                <a href="#" class="button">Дізнатися більше</a>
+                <h1 class="animate__animated animate__backInDown hero-title">Ласкаво просимо до нашого турагентства!</h1>
+                <p class="animate__animated animate__fadeInUp hero-description">Подорожуйте з комфортом та відкривайте нові місця з нами.</p>
+                <div href="./about.html" id="modalButton" class="animate__animated animate__fadeInUp button">Дізнатися більше</div>
             </div>
         </section>
 
         <section class="features">
-            <div class="feature">
+            <div class="animate__animated animate__backInLeft feature">
                 <img src="./images/icon1.png" alt="Feature Icon" class="feature-icon">
                 <h2 class="feature-title">Широкий вибір турів</h2>
                 <p class="feature-description">У нас ви знайдете різноманітні тури на будь-який смак і бюджет.</p>
             </div>
-            <div class="feature">
+            <div class="animate__animated animate__backInUp feature">
                 <img src="./images/icon2.png" alt="Feature Icon" class="feature-icon">
                 <h2 class="feature-title">Професійні гіди</h2>
                 <p class="feature-description">Наші кваліфіковані гіди забезпечать вам незабутні враження від подорожі.
                 </p>
             </div>
-            <div class="feature">
+            <div class="animate__animated animate__backInRight feature">
                 <img src="./images/icon3.png" alt="Feature Icon" class="feature-icon">
                 <h2 class="feature-title">Комфортне проживання</h2>
                 <p class="feature-description">Ми дбаємо про ваш комфорт та забезпечуємо якісне проживання під час туру.
                 </p>
             </div>
         </section>
+
+
 
         <section class="contact">
             <h2 class="contact-title">Зв'яжіться з нами</h2>
@@ -74,6 +78,17 @@
         </section>
     </main>
 
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-img"><img class="modal-img" src="./images/ttt.jpg" alt=""></div>
+          <h2 class="modal-h">Вітаємо!</h2>
+          <p>Ми - турагентство, яке працює для вас. Наша мета - зробити ваші мрії про незабутні подорожі
+            реальністю. Ми надаємо широкий вибір турів у різні куточки світу, від захоплюючих екскурсій до
+            релаксуючих пляжних відпочинків.</p>
+            <p>Для більш детальної інформації пропонуємо Вам ознайомитись з відповідною <a class="active link" href="./about.html">сторінкою.</a></p>
+        </div>
+      </div>
 
     <footer>
         <div class="footer-content">
