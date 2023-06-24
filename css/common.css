@@ -7,6 +7,7 @@ body {
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
+    overflow-x: hidden;
 }
 
 h1,
@@ -34,7 +35,8 @@ button:hover,
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-select, option,
+select,
+option,
 textarea {
     width: 100%;
     padding: 10px;
@@ -44,7 +46,7 @@ textarea {
     font-size: 14px;
 }
 
-main{
+main {
     margin: 0 auto;
     width: 100vh;
 }
@@ -261,67 +263,67 @@ footer {
 .about-section {
     background-color: #f4f4f4;
     padding: 50px 0;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .about-content {
+}
+
+.about-content {
     text-align: center;
     padding: 30px;
     margin: 0 20px;
     padding-bottom: 0px;
-  }
-  
-  .about-content h2 {
+}
+
+.about-content h2 {
     font-size: 32px;
     margin-bottom: 20px;
     color: #333;
-  }
-  
-  .about-content p {
+}
+
+.about-content p {
     font-size: 18px;
     margin-bottom: 20px;
     color: #555;
-  }
-  
-  .about-icons {
+}
+
+.about-icons {
     display: flex;
     justify-content: center;
     padding-top: 16px;
-    background: rgb(244,244,244);
-background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(244,244,244,1) 100%);
-  }
-  
-  .icon {
+    background: rgb(244, 244, 244);
+    background: linear-gradient(90deg, rgba(244, 244, 244, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(244, 244, 244, 1) 100%);
+}
+
+.icon {
     text-align: center;
     margin: 0 20px;
-  }
-  
-  .icon img {
+}
+
+.icon img {
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
-  }
-  
-  .icon p {
-    font-size: 16px;
-    color: #555;
-  }
-  
-.light{
-background-color: #f8f8f8;
 }
 
-.dark{
+.icon p {
+    font-size: 16px;
+    color: #555;
+}
+
+.light {
+    background-color: #f8f8f8;
+}
+
+.dark {
     background-color: #f4f4f4;
 }
 
-.country{
-margin: 0 auto;
+.country {
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -329,44 +331,44 @@ margin: 0 auto;
     text-align: center;
     padding: 30px 0;
     padding-bottom: 0px;
-  }
-  
-  .countries-content h2 {
+}
+
+.countries-content h2 {
     font-size: 32px;
     margin-bottom: 20px;
     color: #333;
-  }
-  
-  .countries-content p {
+}
+
+.countries-content p {
     font-size: 18px;
     margin-bottom: 20px;
     color: #555;
-  }
+}
 
-  .country-info{
+.country-info {
     padding: 0 40px;
-  }
+}
 
-  .country-wrapper{
+.country-wrapper {
     margin: 0 auto;
     padding-top: 10px;
     width: 50px;
     height: auto;
-  }
+}
 
-  .country-img{
+.country-img {
     width: 100%;
     height: auto;
-  }
+}
 
-  i{
+i {
     font-size: 28px;
     padding: 5px 8px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-i:hover{
+i:hover {
     opacity: 0.7;
     transition: 0.3s;
 }
@@ -388,6 +390,99 @@ i:hover{
     transition: 0.3s;
 }
 
-  .scroll-to-top:hover{
+.scroll-to-top:hover {
     background-color: #5a5a5a;
-  }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .about-icons {
+        padding: 16px 10px 0;
+    }
+
+    .icon {
+        margin: 0 5px;
+    }
+
+    .hero {
+        padding: 50px 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        padding: 30px 0;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .feature-title {
+        font-size: 20px;
+    }
+
+    .feature-description {
+        font-size: 12px;
+    }
+
+    .contact {
+        padding: 30px 0;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .contact-description {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .modal-content {
+        margin: 5% auto;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .modal-img {
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+}
